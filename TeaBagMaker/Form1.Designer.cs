@@ -28,18 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.teaList1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.time1 = new System.Windows.Forms.Label();
             this.btnMake = new System.Windows.Forms.Button();
             this.time2 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // teaList1
             // 
-            this.teaList1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.teaList1.FormattingEnabled = true;
             this.teaList1.Location = new System.Drawing.Point(13, 13);
             this.teaList1.Name = "teaList1";
@@ -67,7 +65,7 @@
             // 
             // btnMake
             // 
-            this.btnMake.Location = new System.Drawing.Point(12, 70);
+            this.btnMake.Location = new System.Drawing.Point(12, 94);
             this.btnMake.Name = "btnMake";
             this.btnMake.Size = new System.Drawing.Size(75, 23);
             this.btnMake.TabIndex = 3;
@@ -77,30 +75,32 @@
             // time2
             // 
             this.time2.AutoSize = true;
-            this.time2.Location = new System.Drawing.Point(88, 46);
+            this.time2.Location = new System.Drawing.Point(13, 69);
             this.time2.Name = "time2";
             this.time2.Size = new System.Drawing.Size(69, 12);
             this.time2.TabIndex = 4;
             this.time2.Text = "남은 시간 : ";
             // 
-            // timer1
+            // textBox1
             // 
-            this.timer1.Interval = 1000;
+            this.textBox1.Location = new System.Drawing.Point(88, 66);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(77, 21);
+            this.textBox1.TabIndex = 5;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(213, 184);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.time2);
             this.Controls.Add(this.btnMake);
             this.Controls.Add(this.time1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.teaList1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Tea";
+            this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,7 +113,7 @@
         private System.Windows.Forms.Label time1;
         private System.Windows.Forms.Button btnMake;
         private System.Windows.Forms.Label time2;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

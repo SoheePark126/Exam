@@ -13,7 +13,7 @@ namespace TeaBagMaker
 
     public partial class Form1 : Form
     {
-        string[] SList = new string[]{"홍차", "녹차", "루이보스차",
+        string[] SList = new string[]{"홍차", "녹차", "루이보스차", 
             "국화차"};
         string orgStr = ""; // 선택 결과 저장 
         public Form1()
